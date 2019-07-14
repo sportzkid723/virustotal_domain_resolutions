@@ -1,0 +1,37 @@
+If you receive something like this:
+
+  "Traceback (most recent call last):
+    File "C:/Users/Coty/.PyCharmCE2019.1/config/scratches/apitest.py", line 23, in <module>
+      search('149.56.18.177')
+    File "C:/Users/Coty/.PyCharmCE2019.1/config/scratches/apitest.py", line 15, in search
+      json_obj = urlopen(final_url)
+    File "C:\Users\Coty\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 222, in urlopen
+      return opener.open(url, data, timeout)
+    File "C:\Users\Coty\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 531, in open
+      response = meth(req, response)
+    File "C:\Users\Coty\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 641, in http_response
+      'http', request, response, code, msg, hdrs)
+    File "C:\Users\Coty\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 569, in error
+      return self._call_chain(*args)
+    File "C:\Users\Coty\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 503, in _call_chain
+      result = func(*args)
+    File "C:\Users\Coty\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 649, in http_error_default
+      raise HTTPError(req.full_url, code, msg, hdrs, fp)
+  urllib.error.HTTPError: HTTP Error 403: Forbidden"
+
+check to make sure your API key is correct.
+
+
+If you receive something like this:
+
+   "Traceback (most recent call last):
+    File "C:/Users/Coty/.PyCharmCE2019.1/config/scratches/apitest.py", line 23, in <module>
+      search('149.56.18.178')
+    File "C:/Users/Coty/.PyCharmCE2019.1/config/scratches/apitest.py", line 18, in search
+      for item in data['resolutions']:
+  KeyError: 'resolutions'"
+  
+  check to make sure the IP address actually exists.
+
+
+
